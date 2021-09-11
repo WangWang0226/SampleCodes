@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD maxSegmentDuration="PT0H0M6.714S" mediaPresentationDuration="PT0H0M22.685S" minBufferTime="PT1.500S" profiles="urn:mpeg:dash:profile:full:2011" type="static" xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:cenc="urn:mpeg:cenc:2013" xmlns:clearkey="http://dashif.org/guidelines/clearKey">
+    <ProgramInformation>
+        <Title>8806132624
+  </Title>
+    </ProgramInformation>
+    <Period duration="PT0H0M22.685S">
+        <AdaptationSet lang="und" maxFrameRate="24000/1001" maxWidth="1080" maxHeight="1920" par="1080:1920" segmentAlignment="true" startWithSAP="1">
+            <SegmentTemplate duration="60040" initialization="dash/$RepresentationID$/init.mp4" media="dash/$RepresentationID$/$Number$.m4s" startNumber="1" timescale="10000"/>
+            <ContentProtection cenc:default_KID="739cfe0a-86f9-16fe-87be-d5e2788d1ca0" schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/>
+            <Representation bandwidth="4905016" codecs="avc1.640032" frameRate="24000/1001" width="1080" id="35a40191-6e3c-44b4-887c-dbd7b53baeea_1920p_5000k" mimeType="video/mp4" sar="1:1" height="1920" >
+                <ContentProtection schemeIdUri="urn:uuid:e2719d58-a985-b3c9-781a-b030af78d30e" value="ClearKey1.0">
+                    <clearkey:Laurl Lic_type="EME-1.0">https://jon-bv.kkstream.tech/api/v2/key/fb091f119399b2f95617ab012bc159615023f4c6/eme
+     </clearkey:Laurl>
+                </ContentProtection>
+            </Representation>
+        </AdaptationSet>
+        <AdaptationSet lang="und" segmentAlignment="true" startWithSAP="1">
+            <SegmentTemplate duration="264776" initialization="dash/$RepresentationID$/init.mp4" media="dash/$RepresentationID$/$Number$.m4s" startNumber="1" timescale="44100"/>
+            <ContentProtection cenc:default_KID="739cfe0a-86f9-16fe-87be-d5e2788d1ca0" schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/>
+            <Representation audioSamplingRate="44100" bandwidth="128064" codecs="mp4a.40.2" id="128k" mimeType="audio/mp4">
+                <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+                <ContentProtection schemeIdUri="urn:uuid:e2719d58-a985-b3c9-781a-b030af78d30e" value="ClearKey1.0">
+                    <clearkey:Laurl Lic_type="EME-1.0">https://jon-bv.kkstream.tech/api/v2/key/fb091f119399b2f95617ab012bc159615023f4c6/eme
+     </clearkey:Laurl>
+                </ContentProtection>
+            </Representation>
+        </AdaptationSet>
+    </Period>
+</MPD>
